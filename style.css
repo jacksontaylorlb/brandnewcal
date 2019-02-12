@@ -1,0 +1,64 @@
+body{
+    margin:0;
+    padding:0;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    height:100vh;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    background-color: #222;
+    color: #aaa;
+    background:url(1200px-Bond_Falls_in_January_2.jpg);
+    backround-size:cover;
+}
+
+/*image has a free use license src: https://commons.wikimedia.org/wiki/File:Bond_Falls_in_January_2.jpg*/
+.calendar{
+    width:300px;
+    height:auto;
+    background:#fff;
+    box-sizing: border-box;
+}
+
+.calendar .date{
+    padding:20px;
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(25px,1fr));
+    grid-gap:10px;
+    box-sizing: border-box;
+}
+.calendar .date div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+    color: #262626;
+}
+
+.calendar .date div.day{
+    font-weight: 600;
+}
+
+.calendar .date div.number:first-child
+.calendar .date div.number:nth-child(2n+1){
+    color: #ff685d;
+    font-weight: 700;
+}
+
+.calendar div.h3{
+    margin: 10px;
+    padding: 10px;
+}
+
+.calendar .date div.number.active{
+    background: #009688;
+    color: #fff;
+}
+
+.calendar .date div.number{
+    display: grid;
+    /*grid-template-columns: repeat(auto-fit,minmax(30px,1fr));*/
+    grid-gap:20px;
+
+}
